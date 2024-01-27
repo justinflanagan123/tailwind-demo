@@ -8,45 +8,49 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <img src="./images/me.jpg" alt="" />
-      <h1>Manav Misra</h1>
-      <h2>Senior Web Developer</h2>
+    <header class="flex items-center justify-center">
+      <img src="./images/me.jpg" alt="" width="96" height="96" />
+      <div class="flex flex-col">
+        <h1>Manav Misra</h1>
+        <h2>Senior Web Developer</h2>
+      </div>
     </header>
 
     <main>
-      <p>
-        I specialize in the <a href="https://react.dev/">React</a> ecosystem
-        (e.g. NextJS App Router, React Testing Library), TS, Cypress, etc. I can
-        also make my way around a back-end REST API or GraphQL server with
-        Node/Express or Django/DRF.
-      </p>
+      <div>
+        <p>
+          I specialize in the <a href="https://react.dev/">React</a> ecosystem
+          (e.g. NextJS App Router, React Testing Library), TS, Cypress, etc. I
+          can also make my way around a back-end REST API or GraphQL server with
+          Node/Express or Django/DRF.
+        </p>
 
-      <p>
-        I work at a startup called Planaday. Recently I overhauled the entire
-        web app UI and built out a custom component library in Storybook.
-      </p>
+        <p>
+          I work at a startup called Planaday. Recently I overhauled the entire
+          web app UI and built out a custom component library in Storybook.
+        </p>
 
-      <ul>
-        <li>
-          I’m currently overhauling the entire front-end of a UI using NextJS
-          v14. 🤓
-        </li>
+        <ul class="flex flex-col">
+          <li>
+            I’m currently overhauling the entire front-end of a UI using NextJS
+            v14. 🤓
+          </li>
 
-        <li>
-          📫 How to reach me: 🤷‍♂️. If it's important enough, sometimes I am on
-          LinkedIn.
-        </li>
+          <li>
+            📫 How to reach me: 🤷‍♂️. If it's important enough, sometimes I am on
+            LinkedIn.
+          </li>
 
-        <li>⚡ Fun facts:</li>
-        <ul>
-          <li>I ❤️ watching 🤼 pro-wrestling. #BustedOpen247</li>
-          <li>Powerlifter (Beginner) 🏋️‍♂️!</li>
+          <li>⚡ Fun facts:</li>
+          <ul class="flex flex-col">
+            <li>I ❤️ watching 🤼 pro-wrestling. #BustedOpen247</li>
+            <li>Powerlifter (Beginner) 🏋️‍♂️!</li>
+          </ul>
         </ul>
-      </ul>
+      </div>
     </main>
 
-    <footer>
+    <footer class="flex">
       <a href="https://github.com/manavm1990">GitHub</a>
       <a href="https://www.linkedin.com/in/manavm1990/">LinkedIn</a>
     </footer>
