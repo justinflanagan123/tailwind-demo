@@ -106,3 +106,15 @@ button:hover {
 .justify-center {
   justify-content: center;
 }
+
+@media screen and (width >= 1080px) {
+  .grid-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
