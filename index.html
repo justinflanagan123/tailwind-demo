@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,66 +7,71 @@
     <title>Manav Misra</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <header>
-      <img src="./images/me.jpg" alt="" width="96" height="96" />
+  <body class="bg-slate-900 text-white">
+    <header
+      class="flex items-center justify-center gap-x-4 bg-white p-8 text-slate-900"
+    >
+      <img
+        src="./images/me.jpg"
+        alt=""
+        width="96"
+        height="96"
+        class="rounded-full shadow-lg shadow-slate-300"
+      />
       <div>
-        <h1>Manav Misra</h1>
-        <h2>Senior Web Developer</h2>
+        <h1 class="text-3xl font-bold">Manav Misra</h1>
+        <h2 class="font-thin">Senior Web Developer</h2>
       </div>
     </header>
 
     <main>
       <div>
-        <div>
-          <p>
-            I specialize in the <a href="https://react.dev/">React</a> ecosystem
-            (e.g. NextJS App Router, React Testing Library), TS, Cypress, etc. I
-            can also make my way around a back-end REST API or GraphQL server
-            with Node/Express or Django/DRF.
-          </p>
+        <p>
+          I specialize in the <a href="https://react.dev/">React</a> ecosystem
+          (e.g. NextJS App Router, React Testing Library), TS, Cypress, etc. I
+          can also make my way around a back-end REST API or GraphQL server with
+          Node/Express or Django/DRF.
+        </p>
 
-          <p>
-            I work at a startup called Planaday. Recently I overhauled the
-            entire web app UI and built out a custom component library in
-            Storybook.
-          </p>
+        <p>
+          I work at a startup called Planaday. Recently I overhauled the entire
+          web app UI and built out a custom component library in Storybook.
+        </p>
 
+        <ul>
+          <li>
+            I’m currently overhauling the entire front-end of a UI using NextJS
+            v14. 🤓
+          </li>
+
+          <li>
+            📫 How to reach me: 🤷‍♂️. If it's important enough, sometimes I am on
+            LinkedIn.
+          </li>
+
+          <li>⚡ Fun facts:</li>
           <ul>
-            <li>
-              I’m currently overhauling the entire front-end of a UI using
-              NextJS v14. 🤓
-            </li>
-
-            <li>
-              📫 How to reach me: 🤷‍♂️. If it's important enough, sometimes I am
-              on LinkedIn.
-            </li>
-
-            <li>⚡ Fun facts:</li>
-            <ul>
-              <li>I ❤️ watching 🤼 pro-wrestling. #BustedOpen247</li>
-              <li>Powerlifter (Beginner) 🏋️‍♂️!</li>
-            </ul>
+            <li>I ❤️ watching 🤼 pro-wrestling. #BustedOpen247</li>
+            <li>Powerlifter (Beginner) 🏋️‍♂️!</li>
           </ul>
-        </div>
-
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="✉️" />
-
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" placeholder="☎️" />
-
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="What's up?"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
+        </ul>
       </div>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="✉️" />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="☎️" />
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="What's up?"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
 
     <footer>
