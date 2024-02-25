@@ -7,9 +7,9 @@
     <title>Manav Misra</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-slate-900 tracking-wide text-white *:p-8">
+  <body class="bg-slate-900 tracking-wide text-white">
     <header
-      class="flex items-center justify-center gap-x-4 bg-white text-slate-900"
+      class="flex items-center justify-center gap-x-4 bg-white p-8 text-slate-900"
     >
       <img
         src="./images/me.jpg"
@@ -24,8 +24,8 @@
       </div>
     </header>
 
-    <main>
-      <section class="px-0 *:mb-4">
+    <main class="py-4">
+      <section class="*:mb-4 *:px-8">
         <h2 class="text-2xl font-medium underline underline-offset-2">
           About Me
         </h2>
@@ -60,7 +60,9 @@
         </ul>
       </section>
 
-      <form class="flex flex-col gap-y-4 [&>input]:rounded [&>label]:sr-only">
+      <form
+        class="flex flex-col gap-y-4 px-8 py-4 [&>input]:min-h-12 [&>input]:rounded [&>label]:sr-only"
+      >
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your Name" />
 
@@ -79,7 +81,7 @@
       </form>
     </main>
 
-    <footer class="divide-x border-t-2 border-white pt-4">
+    <footer class="divide-x border-t-2 border-white p-8">
       <a href="https://github.com/manavm1990" class="pr-2">GitHub</a>
       <a href="https://www.linkedin.com/in/manavm1990/" class="pl-3"
         >LinkedIn</a
