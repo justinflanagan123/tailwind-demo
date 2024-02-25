@@ -7,7 +7,7 @@
     <title>Manav Misra</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-slate-900 text-white *:p-8">
+  <body class="bg-slate-900 tracking-wide text-white *:p-8">
     <header
       class="flex items-center justify-center gap-x-4 bg-white text-slate-900"
     >
@@ -25,7 +25,7 @@
     </header>
 
     <main>
-      <section class="*:mb-4">
+      <section class="px-0 *:mb-4">
         <h2 class="text-2xl font-medium underline underline-offset-2">
           About Me
         </h2>
@@ -41,7 +41,7 @@
           web app UI and built out a custom component library in Storybook.
         </p>
 
-        <ul class="space-y-4 border-t-2 border-white pt-4">
+        <ul class="space-y-4 border-y-2 border-white py-4">
           <li>
             I’m currently overhauling the entire front-end of a UI using NextJS
             v14. 🤓
@@ -60,7 +60,7 @@
         </ul>
       </section>
 
-      <form>
+      <form class="flex flex-col gap-y-4 [&>input]:rounded [&>label]:sr-only">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your Name" />
 
@@ -73,13 +73,17 @@
         <label for="message">Message</label>
         <textarea id="message" placeholder="What's up?"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="mt-4 h-12 rounded bg-green-500 text-white">
+          Submit
+        </button>
       </form>
     </main>
 
-    <footer>
-      <a href="https://github.com/manavm1990">GitHub</a>
-      <a href="https://www.linkedin.com/in/manavm1990/">LinkedIn</a>
+    <footer class="divide-x border-t-2 border-white pt-4">
+      <a href="https://github.com/manavm1990" class="pr-2">GitHub</a>
+      <a href="https://www.linkedin.com/in/manavm1990/" class="pl-3"
+        >LinkedIn</a
+      >
     </footer>
   </body>
 </html>
