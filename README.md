@@ -1,5 +1,7 @@
 # Tailwind Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa583acf-eb2c-45f0-a60f-3eb0df98e32e/deploy-status)](https://app.netlify.com/sites/friendly-donut-bbe0f4/deploys)
+
 This demo coincides with [lesson materials](https://github.com/SWIC-177/curriculum-content/blob/main/week-8.md#tailwind-refactor-%EF%B8%8F-example). Follow along with those!
 
 ## Forking and/or Cloning
