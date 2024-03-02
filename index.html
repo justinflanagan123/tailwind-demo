@@ -61,7 +61,7 @@
       </section>
 
       <form
-        class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 md:grid md:grid-cols-2 [&>input]:min-h-12 [&>input]:rounded [&>label]:sr-only"
+        class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&>label]:sr-only"
       >
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your Name" />
@@ -77,7 +77,7 @@
 
         <button
           type="submit"
-          class="col-span-2 mt-4 h-12 max-w-min place-self-center rounded bg-green-500 px-4 py-2 text-white"
+          class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
         >
           Submit
         </button>
