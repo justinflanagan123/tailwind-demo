@@ -61,7 +61,7 @@
       </section>
 
       <form
-        class="grid grid-cols-1 gap-y-4 px-8 py-4 [&>input]:min-h-12 [&>input]:rounded [&>label]:sr-only"
+        class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 md:grid md:grid-cols-2 [&>input]:min-h-12 [&>input]:rounded [&>label]:sr-only"
       >
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your Name" />
@@ -75,7 +75,10 @@
         <label for="message">Message</label>
         <textarea id="message" placeholder="What's up?"></textarea>
 
-        <button type="submit" class="mt-4 h-12 rounded bg-green-500 text-white">
+        <button
+          type="submit"
+          class="col-span-2 mt-4 h-12 max-w-min place-self-center rounded bg-green-500 px-4 py-2 text-white"
+        >
           Submit
         </button>
       </form>
