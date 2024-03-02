@@ -11,3 +11,7 @@ If you want to get this code down to your computer to play around with, you can 
 Just cloning it though will not allow you to **push** any updates. You probably don't need to as you are supposed to work on your own repo from before. But, in case you do, you just need to [click that 'Fork' button in the top right.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) That will make a copy to your own GitHub account and then you can `clone` it.
 
 BTW, this forking process is what happens automatically whenever we use GitHub Classroom.
+
+## Deploying
+
+[Here's](https://somup.com/cZen3apHIp) how to deploy your site to Netlify. 🚀
