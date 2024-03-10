@@ -1,94 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manav Misra</title>
     <link rel="stylesheet" href="./style.css" />
+    <title>Justin Flanagan</title>
   </head>
-  <body class="bg-slate-900 tracking-wide text-white">
-    <header
-      class="flex items-center justify-center gap-x-4 bg-white p-8 text-slate-900"
-    >
-      <img
-        src="./images/me.jpg"
-        alt=""
-        width="96"
-        height="96"
-        class="rounded-full shadow-lg shadow-slate-300"
-      />
-      <div>
-        <h1 class="text-3xl font-bold">Manav Misra</h1>
-        <h2 class="font-thin">Senior Web Developer</h2>
-      </div>
+  <body>
+    <header>
+      <h1>Justin Flanagan</h1>
+      <p>
+        Hello my name is Justin and this is my personal bio page! I will be
+        sharing some thing about my stuff and where I am in life.
+      </p>
     </header>
 
-    <main class="py-4">
-      <section class="container mx-auto max-w-prose *:mb-4 *:px-8">
-        <h2 class="text-2xl font-medium underline underline-offset-2">
-          About Me
-        </h2>
-        <p>
-          I specialize in the <a href="https://react.dev/">React</a> ecosystem
-          (e.g. NextJS App Router, React Testing Library), TS, Cypress, etc. I
-          can also make my way around a back-end REST API or GraphQL server with
-          Node/Express or Django/DRF.
-        </p>
+    <main>
+      <h2>About Me</h2>
+      <p>
+        Hey all, I am a student at
+        <a href="https://www.swic.edu/">SWIC</a> and I'm trying to get my
+        Associate in Applied Science Graphic Communications. Coding is something
+        I fell in love with turing my high school year at
+        <a href="https://sites.google.com/columbia4.org/chseagles/home"
+          >Columbia</a
+        >. After a few coding coding classes i realized that this was something
+        I want to pursue as a career. For now I work as a MSA at the Monroe
+        County YMCA, which is just a front desk person. I like my job, the
+        people are very kind to me and a huge plus is that I get a free
+        membership. I hope in the future I can achieve my goal of being a web
+        developer.
+      </p>
 
-        <p>
-          I work at a startup called Planaday. Recently I overhauled the entire
-          web app UI and built out a custom component library in Storybook.
-        </p>
+      <h2>Interests</h2>
+      <ul>
+        <li>
+          I love to watch Horror Movies. I'm a sucker for chessy ones. The
+          Ritual has to be my all time favorite one. When it come to my favorite
+          horror series it's got to be V/H/S.
+        </li>
 
-        <ul class="space-y-4 border-y-2 border-white py-4">
-          <li>
-            I’m currently overhauling the entire front-end of a UI using NextJS
-            v14. 🤓
-          </li>
+        <li>
+          Working out is a big thing to me. I started going to the gym around
+          2018 to lose weight. While I was working out I got an invitation to go
+          powerlifting and really enjoy it. I did two competitions and they
+          where a ton of fun, but for now I have taken a break due to back
+          issues.
+        </li>
 
-          <li>
-            📫 How to reach me: 🤷‍♂️. If it's important enough, sometimes I am on
-            LinkedIn.
-          </li>
+        <li>
+          I'm very big into video games. I have a PC right now but in the pass
+          I've had Xbox"s and PlayStation's. Right now I am playing Pal World
+        </li>
 
-          <li>⚡ Fun facts:</li>
-          <ul class="ml-4 space-y-4">
-            <li>I ❤️ watching 🤼 pro-wrestling. #BustedOpen247</li>
-            <li>Powerlifter (Beginner) 🏋️‍♂️!</li>
-          </ul>
-        </ul>
-      </section>
+        <li>
+          I'm a pretty big fan of wrestling. I've falling out of it recently but
+          when I was younger I used to watch WWE all the time. favorite wrestler
+          has to be Mick Foley
+        </li>
 
-      <form
-        class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&>label]:sr-only"
-      >
+        <li>
+          <strong>What do you play games on:</strong>
+
+          <form>
+            <label for="pc">PC</label>
+            <input type="checkbox" id="pc" name="console" value="PC" />
+
+            <label for="xbox">Xbox</label>
+            <input type="checkbox" id="xbox" name="console" value="Xbox" />
+
+            <label for="playstation">PlayStation</label>
+            <input
+              type="checkbox"
+              id="playstation"
+              name="console"
+              value="PlayStation"
+            />
+
+            <label for="nintendo">Nintendo</label>
+            <input
+              type="checkbox"
+              id="nintendo"
+              name="console"
+              value="Nintendo"
+            />
+          </form>
+        </li>
+      </ul>
+
+      <form class="flex-col">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
+        <input type="text" id="name" />
 
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="✉️" />
+        <input type="email" id="email" />
 
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="☎️" />
+        <input type="tel" id="phone" />
 
         <label for="message">Message</label>
-        <textarea id="message" placeholder="What's up?"></textarea>
-
-        <button
-          type="submit"
-          class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
-        >
-          Submit
-        </button>
+        <textarea id="message" name="message"></textarea>
       </form>
     </main>
 
-    <footer class="divide-x border-t-2 border-white p-8">
-      <a href="https://github.com/manavm1990" class="pr-2">GitHub</a>
-      <a href="https://www.linkedin.com/in/manavm1990/" class="pl-3"
-        >LinkedIn</a
-      >
+    <footer>
+      <a href="https://github.com/justinflanagan123">GitHub</a>
     </footer>
   </body>
 </html>
