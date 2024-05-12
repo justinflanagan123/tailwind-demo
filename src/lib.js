@@ -38,13 +38,15 @@ export const hideError = (el) => {
 };
 
 export const renderError = (el, msg) => {
-  const errorEl = el.parentNode.querySelector(".error");
+  const elParent = el.parentNode;
+
+  const errorEl = elParent.querySelector(".error");
 
   if (errorEl) errorEl.classList.add("is-error");
   else {
     const errorElement = document.createElement("p");
     errorElement.className = "error is-error";
     errorElement.textContent = msg;
-    el.parentNode.appendChild(errorElement);
+    elParent.appendChild(errorElement);
   }
 };
