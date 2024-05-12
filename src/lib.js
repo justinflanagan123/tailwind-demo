@@ -1,3 +1,5 @@
+import validator from "validator";
+
 export const ERRORS = [
   {
     id: "name",
@@ -10,9 +12,7 @@ export const ERRORS = [
     id: "email",
     msg: "Please enter a valid email address.",
     validate(val) {
-      // Regular expression for basic email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(val);
+      return validator.isEmail(val);
     },
   },
   {
@@ -20,8 +20,7 @@ export const ERRORS = [
     msg: "Please enter a valid phone number.",
     validate(val) {
       // Regular expression for basic phone number validation
-      const phoneRegex = /^[0-9]{10}$/;
-      return phoneRegex.test(val);
+      return validator.isMobilePhone(val, "en-US");
     },
   },
   {
